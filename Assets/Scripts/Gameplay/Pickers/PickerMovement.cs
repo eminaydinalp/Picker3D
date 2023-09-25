@@ -3,7 +3,6 @@ using UnityEngine;
 using DG.Tweening;
 using Gameplay;
 using Lean.Touch;
-using UnityEngine.Serialization;
 
 public class PickerMovement : MonoBehaviour
 {
@@ -19,65 +18,9 @@ public class PickerMovement : MonoBehaviour
     
     private LeanFinger myFinger;
 
-    [SerializeField] private float direction;
-    
-    [Header("Horizontal Movement Information \n")] 
-    [SerializeField] private Vector3 localMoverTarget;
-    
-    [SerializeField] private float lerpSpeed;
-
-
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody>();
-    }
-
-    private void FingerDown(LeanFinger finger)
-    {
-        if (finger.IsOverGui)
-            return;
-
-        if (myFinger == null)
-        {
-            myFinger = finger;
-        }
-    }
-
-    private void FingerUpdate(LeanFinger finger)
-    {
-        if (finger == myFinger)
-        {
-            if (canMove)
-            {
-                direction = finger.ScaledDelta.x;
-                
-                if (Input.GetMouseButton(0))
-                {
-                    //Move(direction, horiztontalSpeed);
-                
-                }
-                if (Input.touchCount > 0)
-                {
-                    Touch touch = Input.GetTouch(0);
-
-                    if (touch.phase is TouchPhase.Moved or TouchPhase.Stationary)
-                    {
-                        //Move(direction , horiztontalSpeed);
-                    }
-                }
-            }
-        }
-    }
-
-    private void FingerUp(LeanFinger finger)
-    {
-        if (myFinger == finger)
-        {
-            _rigidbody.velocity = Vector3.zero;
-            localMoverTarget = Vector3.zero;
-            direction = 0;
-            myFinger = null;
-        }
     }
     
     private void MovePlayer()
@@ -86,27 +29,6 @@ public class PickerMovement : MonoBehaviour
         velocity = new Vector3(InputManager.Instance.moveVector.x * horiztontalSpeed, velocity.y, velocity.z);
         _rigidbody.velocity = velocity;
     }
-
-    private void Move()
-    {
-        if(Mathf.Abs(direction) < 0.1f) return;
-        var velocity = _rigidbody.velocity;
-        velocity = new Vector3( direction * horiztontalSpeed, velocity.y, velocity.z);
-        _rigidbody.velocity = velocity;
-    }
-    
-    // public void FollowLocalMoverTarget()
-    // {
-    //     //Vector3 nextPos = new Vector3(localMoverTarget.x, 0, 0); ;
-    //     //_rigidbody.velocity = Vector3.Lerp(_rigidbody.velocity, nextPos, lerpSpeed * Time.deltaTime);
-    //     //_rigidbody.velocity = nextPos;
-    //     _rigidbody.MovePosition(_rigidbody.position + localMoverTarget);
-    // }
-    //
-    // public void Move(float direction, float speed)
-    // {
-    //     localMoverTarget += Vector3.right * (direction * speed * Time.deltaTime);
-    // }
 
     private void VerticalMove()
     {
@@ -127,17 +49,13 @@ public class PickerMovement : MonoBehaviour
         if (canRun)
         {
             ClampRigid();
-            //FollowLocalMoverTarget();
         }
     }
     private void FixedUpdate()
     {
         if (canRun)
         {
-            //Move();
             VerticalMove();
-            //FollowLocalMoverTarget();
-            
             MovePlayer();
         }
     }
@@ -150,13 +68,11 @@ public class PickerMovement : MonoBehaviour
     {
         canMove = false;
         canRun = false;
-        direction = 0;
         _rigidbody.velocity = Vector3.zero;
     }
     private void DisableVerticalMovement()
     {
         canRun = false;
-        direction = 0;
         _rigidbody.velocity = Vector3.zero;
     }
     private void EnableVerticalMovement()
@@ -168,7 +84,7 @@ public class PickerMovement : MonoBehaviour
         DisableMovement();
         float curLevellength = LevelManager.Instance.GetCurrentLevelLength(LevelManager.Instance.GetCurrentLevel());
         Vector3 targetPos = new Vector3(0, transform.position.y, curLevellength-10f);
-        transform.DOMove(targetPos, 2f).OnComplete(() =>
+        transform.DOMove(targetPos, .5f).OnComplete(() =>
         {
             movedToNextStartEvent?.Invoke();
         });
@@ -180,10 +96,6 @@ public class PickerMovement : MonoBehaviour
         PickerPhysicsCallbacks.hittedBallCollecterEvent += DisableVerticalMovement;
         PickerPhysicsCallbacks.hittedLevelEndEvent += MoveToNextLevelStartPos;
         BallCollecterPlatform.collecterSuccessEvent += EnableVerticalMovement;
-        
-        LeanTouch.OnFingerUpdate += FingerUpdate;
-        LeanTouch.OnFingerDown += FingerDown;
-        LeanTouch.OnFingerUp += FingerUp;
     }
     private void OnDisable()
     {
@@ -192,9 +104,5 @@ public class PickerMovement : MonoBehaviour
         PickerPhysicsCallbacks.hittedBallCollecterEvent -= DisableVerticalMovement;
         PickerPhysicsCallbacks.hittedLevelEndEvent -= MoveToNextLevelStartPos;
         BallCollecterPlatform.collecterSuccessEvent -= EnableVerticalMovement;
-        
-        LeanTouch.OnFingerUpdate -= FingerUpdate;
-        LeanTouch.OnFingerDown -= FingerDown;
-        LeanTouch.OnFingerUp -= FingerUp;
     }
 }

@@ -38,12 +38,12 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 11
+  serializedVersion: 12
   m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -98,7 +98,8 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 968b9c76dddaf41faaf818164501a5b4,
+    type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -118,21 +119,30 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
 --- !u!21 &68088528
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -248,6 +258,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -346,18 +357,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &91862824
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -473,6 +492,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -571,18 +591,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &108908396
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -698,6 +726,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -796,18 +825,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &114805308
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -923,6 +960,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -1021,18 +1059,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &157532651
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -1148,6 +1194,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -1246,18 +1293,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &177540220
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -1373,6 +1428,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -1471,18 +1527,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &204929401
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -1598,6 +1662,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -1696,18 +1761,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &238334432
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -1823,6 +1896,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -1921,18 +1995,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &242547385
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -2048,6 +2130,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -2146,18 +2229,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &249591962
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -2273,6 +2364,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -2371,18 +2463,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &274413695
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -2498,6 +2598,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -2596,18 +2697,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &347455212
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -2723,6 +2832,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -2821,18 +2931,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &356404754
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -2948,6 +3066,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -3046,18 +3165,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &357857176
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -3173,6 +3300,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -3271,18 +3399,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &379261745
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -3398,6 +3534,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -3496,18 +3633,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &475585721
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -3623,6 +3768,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -3721,18 +3867,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &520230047
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -3848,6 +4002,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -3946,18 +4101,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &526092172
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -4073,6 +4236,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -4171,18 +4335,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &539866068
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -4298,6 +4470,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -4396,18 +4569,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &561264681
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -4523,6 +4704,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -4621,18 +4803,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &564098474
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -4748,6 +4938,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -4846,18 +5037,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &593612992
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -4973,6 +5172,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -5071,18 +5271,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &670853930
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -5198,6 +5406,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -5296,6 +5505,7 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &694483440
 GameObject:
   m_ObjectHideFlags: 0
@@ -5306,6 +5516,7 @@ GameObject:
   m_Component:
   - component: {fileID: 694483442}
   - component: {fileID: 694483441}
+  - component: {fileID: 694483443}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -5372,6 +5583,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!4 &694483442
@@ -5384,22 +5596,50 @@ Transform:
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &694483443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694483440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!21 &699036603
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -5515,6 +5755,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -5613,18 +5854,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &706486503
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -5740,6 +5989,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -5838,18 +6088,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &707476383
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -5965,6 +6223,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -6063,18 +6322,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &711143090
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -6190,6 +6457,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -6288,18 +6556,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &783649327
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -6415,6 +6691,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -6513,18 +6790,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &785700982
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -6640,6 +6925,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -6738,18 +7024,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &798161193
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -6865,6 +7159,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -6963,18 +7258,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &811700530
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -7090,6 +7393,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -7188,18 +7492,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &840618229
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -7315,6 +7627,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -7413,18 +7726,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &847858103
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -7540,6 +7861,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -7638,18 +7960,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &874738651
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -7765,6 +8095,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -7863,18 +8194,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &919397862
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -7990,6 +8329,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -8088,18 +8428,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &920085313
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -8215,6 +8563,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -8313,18 +8662,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &930028360
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -8440,6 +8797,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -8538,18 +8896,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &932311577
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -8665,6 +9031,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -8763,18 +9130,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1011853638
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -8890,6 +9265,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -8988,18 +9364,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1032784512
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -9115,6 +9499,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -9213,18 +9598,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1039442873
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -9340,6 +9733,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -9438,18 +9832,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1049184673
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -9565,6 +9967,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -9663,18 +10066,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1054312583
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -9790,6 +10201,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -9888,18 +10300,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1056093648
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -10015,6 +10435,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -10113,18 +10534,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1075823390
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -10240,6 +10669,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -10338,18 +10768,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1076093035
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -10465,6 +10903,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -10563,18 +11002,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1117796206
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -10690,6 +11137,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -10788,18 +11236,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1131490029
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -10915,6 +11371,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -11013,18 +11470,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1137166085
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -11140,6 +11605,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -11238,18 +11704,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1137914841
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -11365,6 +11839,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -11463,18 +11938,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1149810995
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -11590,6 +12073,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -11688,18 +12172,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1157650178
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -11815,6 +12307,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -11913,18 +12406,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1166470623
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -12040,6 +12541,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -12138,18 +12640,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1174684124
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -12265,6 +12775,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -12363,18 +12874,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1192706105
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -12490,6 +13009,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -12588,18 +13108,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1210738713
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -12715,6 +13243,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -12813,18 +13342,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1217177830
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -12940,6 +13477,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -13038,18 +13576,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1266271192
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -13165,6 +13711,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -13263,18 +13810,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1266930449
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -13390,6 +13945,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -13488,6 +14044,7 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &1297349320
 GameObject:
   m_ObjectHideFlags: 0
@@ -13529,12 +14086,14 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 0
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
   m_Dithering: 0
   m_ClearDepth: 1
+  m_AllowXRRendering: 1
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
@@ -13599,22 +14158,30 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.1214232, y: -0.89, z: -10.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!21 &1299899919
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -13730,6 +14297,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -13828,18 +14396,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1420291821
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -13955,6 +14531,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -14053,6 +14630,7 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &1437227440
 GameObject:
   m_ObjectHideFlags: 0
@@ -14079,6 +14657,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.2984022, y: -6.560232, z: 6.117822}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2970780572161955056}
   - {fileID: 2220190198351669127}
@@ -14100,16 +14679,23 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!21 &1441566252
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -14225,6 +14811,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -14323,18 +14910,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1456285745
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -14450,6 +15045,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -14548,18 +15144,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1462158802
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -14675,6 +15279,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -14773,18 +15378,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1463233596
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -14900,6 +15513,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -14998,18 +15612,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1475186329
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -15125,6 +15747,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -15223,18 +15846,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1502660317
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -15350,6 +15981,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -15448,18 +16080,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1504612229
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -15575,6 +16215,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -15673,18 +16314,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1504634465
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -15800,6 +16449,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -15898,18 +16548,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1532159418
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -16025,6 +16683,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -16123,18 +16782,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1558351778
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -16250,6 +16917,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -16348,18 +17016,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1590705497
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -16475,6 +17151,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -16573,18 +17250,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1634241431
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -16700,6 +17385,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -16798,18 +17484,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1635225734
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -16925,6 +17619,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -17023,18 +17718,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1668214604
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -17150,6 +17853,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -17248,18 +17952,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1735235439
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -17375,6 +18087,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -17473,18 +18186,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1735713096
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -17600,6 +18321,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -17698,18 +18420,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1776467062
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -17825,6 +18555,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -17923,18 +18654,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1777413361
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -18050,6 +18789,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -18148,18 +18888,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1782550377
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -18275,6 +19023,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -18373,18 +19122,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1791461933
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -18500,6 +19257,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -18598,18 +19356,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1806115627
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -18725,6 +19491,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -18823,18 +19590,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1808039566
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -18950,6 +19725,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -19048,6 +19824,7 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &1839969555
 GameObject:
   m_ObjectHideFlags: 0
@@ -19075,6 +19852,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.8762097, y: -2.4800277, z: 3.9396}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -19096,16 +19874,23 @@ MonoBehaviour:
   levelsParent: {fileID: 1437227441}
 --- !u!21 &1895867147
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -19221,6 +20006,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -19319,18 +20105,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1909030687
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -19446,6 +20240,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -19544,18 +20339,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1913542788
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -19671,6 +20474,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -19769,18 +20573,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1919731105
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -19896,6 +20708,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -19994,18 +20807,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1935365285
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -20121,6 +20942,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -20219,18 +21041,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1967291508
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -20346,6 +21176,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -20444,18 +21275,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1986584933
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -20571,6 +21410,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -20669,18 +21509,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1990361141
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -20796,6 +21644,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -20894,18 +21743,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &2016028572
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -21021,6 +21878,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -21119,18 +21977,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &2031389281
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -21246,6 +22112,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -21344,18 +22211,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &2032682382
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -21471,6 +22346,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -21569,18 +22445,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &2048977352
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -21696,6 +22580,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -21794,18 +22679,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &2050892319
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -21921,6 +22814,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -22019,18 +22913,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &2058046902
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -22146,6 +23048,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -22244,18 +23147,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &2058073297
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -22371,6 +23282,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -22469,18 +23381,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &2077923545
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -22596,6 +23516,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -22694,18 +23615,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &2090748528
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -22821,6 +23750,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -22919,18 +23849,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &2106860582
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -23046,6 +23984,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -23144,18 +24083,26 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &2136177875
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlatformMat
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
-    _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC _MK_WRAPPED_DIFFUSE
-    _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -23271,6 +24218,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -23369,6 +24317,7 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.19999993, g: 0.19999993, b: 0.19999993, a: 1}
     - _VertexAnimationFrequency: {r: 2.5, g: 2.5, b: 2.5, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &503839149782355946
 PrefabInstance:
   m_ObjectHideFlags: 0

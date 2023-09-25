@@ -16,7 +16,6 @@ public class GameManager : MonoBehaviour
     }
     public void GameSuccessed()
     {
-        
         gameSuccessedEvent?.Invoke();
         gameFinishedEvent?.Invoke();  
     }
