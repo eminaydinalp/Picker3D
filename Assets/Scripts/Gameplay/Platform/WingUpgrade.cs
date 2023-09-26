@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WingRotate : MonoBehaviour
+public class WingUpgrade : MonoBehaviour
 {
     [SerializeField] bool rotateLeft;
     [SerializeField] float rotateSpeed;
+
+    [SerializeField] private Helicopter helicopter;
     private bool canRotate = false;
     private int rotationSide = 1;
 
@@ -18,6 +20,11 @@ public class WingRotate : MonoBehaviour
     private void Rotate()
     {
         transform.Rotate(Vector3.up * (rotationSide * Time.deltaTime * rotateSpeed));
+    }
+
+    public void PlayHelicopter()
+    {
+        helicopter?.MoveAlongPath();
     }
 
     private void OnEnable()

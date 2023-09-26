@@ -7,7 +7,6 @@ public class WingController : MonoBehaviour
 {
     [SerializeField] private GameObject rightWing;
     [SerializeField] private GameObject leftWing;
-    
     private void OnEnable()
     {
         PickerPhysicsCallbacks.hittedBallCollecterEvent += DisableWings;
@@ -21,7 +20,7 @@ public class WingController : MonoBehaviour
     {
         if (other.CompareTag("WingUpgrade"))
         {
-            Debug.Log("WingUpgrade");
+            other.GetComponent<WingUpgrade>().PlayHelicopter();
             other.gameObject.SetActive(false);
             EnableWings();
         }
