@@ -377,6 +377,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4571539442489516817}
   - component: {fileID: 1115910609112847705}
+  - component: {fileID: 8807862284161412985}
   m_Layer: 0
   m_Name: WingUpgrade
   m_TagString: WingUpgrade
@@ -392,8 +393,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4571539442489516818}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.32, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 2.3, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7896335868846162986}
@@ -413,3 +414,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.43274507, y: 0.44089335, z: 0.14807415}
   m_Center: {x: 0.002275005, y: 0.0072639287, z: -0.0022540092}
+--- !u!114 &8807862284161412985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4571539442489516818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b957c84b4dff447f9414bb3ffdc955e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateLeft: 0
+  rotateSpeed: 20
