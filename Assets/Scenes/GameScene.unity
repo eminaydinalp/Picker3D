@@ -2206,6 +2206,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 200
       objectReference: {fileID: 0}
+    - target: {fileID: 7282406559960353192, guid: f721a9d139e170148afc981f4483588e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -126.316895
+      objectReference: {fileID: 0}
     - target: {fileID: 7702745728444136079, guid: f721a9d139e170148afc981f4483588e,
         type: 3}
       propertyPath: m_fontSize
@@ -3129,6 +3134,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 822198725, guid: df1ae1de912e8412a92b35931c63f11c, type: 3}
+      propertyPath: direction.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 952754776, guid: df1ae1de912e8412a92b35931c63f11c, type: 3}
+      propertyPath: direction.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 917979550077313966, guid: df1ae1de912e8412a92b35931c63f11c,
         type: 3}
       propertyPath: scaleCount

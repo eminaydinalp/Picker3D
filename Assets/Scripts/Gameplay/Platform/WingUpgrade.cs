@@ -10,6 +10,7 @@ public class WingUpgrade : MonoBehaviour
     [SerializeField] private Helicopter helicopter;
     private bool canRotate = false;
     private int rotationSide = 1;
+    [SerializeField] private Vector3 direction;
 
     private void Update()
     {
@@ -19,7 +20,7 @@ public class WingUpgrade : MonoBehaviour
 
     private void Rotate()
     {
-        transform.Rotate(Vector3.up * (rotationSide * Time.deltaTime * rotateSpeed));
+        transform.Rotate(direction * (rotationSide * Time.deltaTime * rotateSpeed));
     }
 
     public void PlayHelicopter()

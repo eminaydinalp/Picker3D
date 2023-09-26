@@ -428,3 +428,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotateLeft: 0
   rotateSpeed: 20
+  helicopter: {fileID: 0}
+  direction: {x: 0, y: 0, z: 1}
