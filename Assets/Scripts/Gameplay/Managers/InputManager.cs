@@ -31,6 +31,7 @@ namespace Gameplay
             if (Input.GetMouseButtonUp(0))
             {
                 _isTouching = false;
+                moveVector = Vector3.zero;
             }
 
             if (Input.GetMouseButtonDown(0))

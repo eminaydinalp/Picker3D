@@ -1026,14 +1026,9 @@ MonoBehaviour:
   - {fileID: 5361923888229618434, guid: 860bbc79b229a10449c0f4dff8f60f0d, type: 3}
   - {fileID: 9154700764630933137, guid: 53864d80a3b589a4a8b758912cf54bf8, type: 3}
   - {fileID: 3749117187294513197, guid: e7f713bb87f0a4b4d8ba6b2385bdb866, type: 3}
-  - {fileID: 7904262427616468736, guid: 93d090910c79a984fb4a4a471de387f8, type: 3}
-  - {fileID: 6923976884918511502, guid: e0e28f0ad6ffe8e4f8e05d97ffcdb69e, type: 3}
-  - {fileID: 1840079056227827827, guid: 145b83a831c37a24a9a558014fa98986, type: 3}
   - {fileID: 8883951510285686270, guid: 455a0c9cdab9496459f93e874b014cb7, type: 3}
   - {fileID: 6822943936136249155, guid: e2b45ae74a6315a408141bd408645855, type: 3}
   - {fileID: 1927790535849630429, guid: d98ef4021b6577f4ea1ca2ac469adc75, type: 3}
-  - {fileID: 6301807550540953767, guid: 84e7fc5669f745d4a82f7ea084c9a0ca, type: 3}
-  - {fileID: 2058722496935243469, guid: fdddd1cef4b31ed46aa9f61015854db1, type: 3}
 --- !u!1 &593178014
 GameObject:
   m_ObjectHideFlags: 0
@@ -2951,6 +2946,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8687335184297407884, guid: df1ae1de912e8412a92b35931c63f11c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8687335185724051692, guid: df1ae1de912e8412a92b35931c63f11c,
         type: 3}
       propertyPath: m_RootOrder

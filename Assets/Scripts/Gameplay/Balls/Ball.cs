@@ -5,10 +5,9 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
     [SerializeField] private GameObject explosionEfectPrefab;
-    [SerializeField] private Renderer myRenderer;
     [SerializeField] private Rigidbody myRb;
     [SerializeField] private float force;
-    private bool isInside=false;
+    public bool isInside=false;
     
 
     public void SetStatus(bool _isInside)
@@ -39,7 +38,7 @@ public class Ball : MonoBehaviour
             transform.position.y +15f,transform.position.z+5f)).normalized;
         myRb.velocity = Vector3.zero;
         myRb.angularVelocity = Vector3.zero;
-        myRb.AddForce(forceDirection * force, ForceMode.Impulse);
+        myRb.AddForce(forceDirection * force);
     }
    
     private void OnEnable()
