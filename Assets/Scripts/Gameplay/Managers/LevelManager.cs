@@ -86,6 +86,8 @@ public class LevelManager : MonoBehaviour
             Quaternion.identity, transform);
 
         levelLoadedEvent?.Invoke();
+        
+        Debug.Log($"Current Level : {currentLevelIndex}");
     }
     public float GetCurrentLevelLength(GameObject curLevelObj)
     {

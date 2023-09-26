@@ -56,8 +56,8 @@ public class PickerMovement : MonoBehaviour
         if (canRun)
         {
             VerticalMove();
-            MovePlayer();
         }
+        MovePlayer();
     }
     private void EnableMovement()
     {

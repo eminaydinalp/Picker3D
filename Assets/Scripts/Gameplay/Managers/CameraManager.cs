@@ -7,7 +7,12 @@ namespace Gameplay
     public class CameraManager : MonoBehaviour
     {
         [SerializeField] private CinemachineBrain _cinemachineBrain;
-        
+
+        private void Start()
+        {
+            _cinemachineBrain.m_UpdateMethod = CinemachineBrain.UpdateMethod.FixedUpdate;
+        }
+
         private void OnEnable()
         {
             PickerPhysicsCallbacks.hittedLevelEndEvent += ChangeToSmartUpdate;

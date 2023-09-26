@@ -21,7 +21,6 @@ public class GameManager : MonoBehaviour
     }
     public void GameFailed()
     {
-
         gameFailedEvent?.Invoke();
         gameFinishedEvent?.Invoke();
     }

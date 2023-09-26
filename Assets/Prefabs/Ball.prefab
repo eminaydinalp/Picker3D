@@ -131,3 +131,4 @@ MonoBehaviour:
     type: 3}
   myRenderer: {fileID: 7125039378778393442}
   myRb: {fileID: 8544949578380167273}
+  force: 600
