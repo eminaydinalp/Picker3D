@@ -30,5 +30,10 @@ public class PlayerScaleup : MonoBehaviour
         scaleText.DOFade(1, 0f).SetEase(Ease.Flash).OnComplete(() => scaleText.DOFade(0, 0).SetDelay(.65f));
         scaleText.rectTransform.DOAnchorPosY(.85f, .65f).SetRelative(true).SetEase(Ease.OutBounce).OnComplete(() =>
             scaleText.rectTransform.DOAnchorPosY(-.85f, .65f).SetRelative(true));
+
+        // scaleText.transform.DOScale(1, 1).OnComplete((() =>
+        // {
+        //     scaleText.transform.DOScale(0, 1);
+        // }));
     }
 }

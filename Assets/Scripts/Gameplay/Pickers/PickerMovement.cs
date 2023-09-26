@@ -84,7 +84,7 @@ public class PickerMovement : MonoBehaviour
         DisableMovement();
         float curLevellength = LevelManager.Instance.GetCurrentLevelLength(LevelManager.Instance.GetCurrentLevel());
         Vector3 targetPos = new Vector3(0, transform.position.y, curLevellength-10f);
-        transform.DOMove(targetPos, .5f).OnComplete(() =>
+        transform.DOMove(targetPos, 2f).OnComplete(() =>
         {
             movedToNextStartEvent?.Invoke();
         });

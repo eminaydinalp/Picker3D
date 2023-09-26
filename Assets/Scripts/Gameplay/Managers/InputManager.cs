@@ -20,14 +20,34 @@ namespace Gameplay
         public float HorizontalInputSpeed = 1.2f;
         public float ClampSpeed = 0.07f;
 
+        private bool _enableInput;
+
 
         private void Awake()
         {
             Instance = this;
         }
 
+        private void OnEnable()
+        {
+            GameManager.gameStartedEvent += EnableInput;
+        }
+        private void OnDisable()
+        {
+            GameManager.gameStartedEvent -= EnableInput;
+        }
+
+        private void EnableInput()
+        {
+            _enableInput = true;
+        }
+
         private void Update()
         {
+            if (!_enableInput)
+            {
+                return;
+            }
             if (Input.GetMouseButtonUp(0))
             {
                 _isTouching = false;

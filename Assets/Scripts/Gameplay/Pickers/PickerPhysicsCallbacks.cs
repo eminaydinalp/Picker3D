@@ -9,7 +9,6 @@ public class PickerPhysicsCallbacks : MonoBehaviour
     {
         if (other.gameObject.CompareTag("BallCollecter"))
         {
-            Debug.Log("BallCollecter");
             other.gameObject.tag = "Untagged";
             BallCollecterPlatform ballCollecterPlatform = other.gameObject.GetComponentInParent<BallCollecterPlatform>();
             ballCollecterPlatform.CheckCollecterStatus();
@@ -18,14 +17,11 @@ public class PickerPhysicsCallbacks : MonoBehaviour
         }
         if (other.gameObject.CompareTag("LevelEnd"))
         {
-            Debug.Log("LevelEnd");
-
             other.gameObject.tag = "Untagged";
             hittedLevelEndEvent?.Invoke();
         }
         if (other.gameObject.CompareTag("Ball"))
         {
-            Debug.Log("Ball");
             SoundManager.Instance.PlayPopSound();
             other.gameObject.GetComponent<Ball>().SetStatus(true);
         }
