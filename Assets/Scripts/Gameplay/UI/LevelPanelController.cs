@@ -20,11 +20,11 @@ public class LevelPanelController : MonoBehaviour
     
     private void OnEnable()
     {
-        BallCollecterPlatform.collecterSuccessEvent += SetStageColor;
+        EventManager.OnCollectorSuccess += SetStageColor;
     }
     private void OnDisable()
     {
-        BallCollecterPlatform.collecterSuccessEvent -= SetStageColor;
+        EventManager.OnCollectorSuccess -= SetStageColor;
     }
 
     private void SetStageColor()

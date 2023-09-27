@@ -12,6 +12,7 @@ public class Helicopter : MonoBehaviour
     [Header("Helicopter")]
     [SerializeField] Transform collectableHolder;
     [SerializeField] float duration;
+    [SerializeField] float ballDropDuration;
     [SerializeField] Transform[] path;
 
     [Header("Collectables")]
@@ -23,21 +24,23 @@ public class Helicopter : MonoBehaviour
     public void MoveAlongPath()
     {
         sequence = DOTween.Sequence();
+        
+        StartCoroutine(DropBall());
 
         foreach (var p in path)
         {
             sequence.Append(transform.DOLocalMove(p.transform.localPosition, duration));
-            StartCoroutine(DropBall());
         }
+        
     }
 
     private IEnumerator DropBall()
     {
         foreach (var obj in collectables)
         {
+            yield return new WaitForSeconds(ballDropDuration);
             obj.transform.SetParent(collectableHolder);
             obj.SetActive(true);
-            yield return new WaitForSeconds(.15f);
         }
     }
 

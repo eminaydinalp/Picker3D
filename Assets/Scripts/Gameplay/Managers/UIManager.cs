@@ -39,16 +39,16 @@ public class UIManager : MonoBehaviour
     }
     private void OnEnable()
     {
-        GameManager.gameStartedEvent += OpenGameUI;
-        GameManager.gameFinishedEvent += CloseGameUI;
-        GameManager.gameFailedEvent += OpenFailUI;
-        GameManager.gameSuccessedEvent += OpenWinUI;
+        EventManager.OnGameStarted += OpenGameUI;
+        EventManager.OnGameFinished += CloseGameUI;
+        EventManager.OnGameFailed += OpenFailUI;
+        EventManager.OnGameSuccessed += OpenWinUI;
     }
     private void OnDisable()
     {
-        GameManager.gameStartedEvent -= OpenGameUI;
-        GameManager.gameFinishedEvent -= CloseGameUI;
-        GameManager.gameFailedEvent -= OpenFailUI;
-        GameManager.gameSuccessedEvent -= OpenWinUI;
+        EventManager.OnGameStarted -= OpenGameUI;
+        EventManager.OnGameFinished -= CloseGameUI;
+        EventManager.OnGameFailed -= OpenFailUI;
+        EventManager.OnGameSuccessed -= OpenWinUI;
     }
 }

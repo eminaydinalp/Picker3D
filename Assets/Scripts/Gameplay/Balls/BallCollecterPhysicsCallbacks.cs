@@ -12,7 +12,7 @@ public class BallCollecterPhysicsCallbacks : MonoBehaviour
             
             other.gameObject.tag = "Untagged";
             ballCollecterPlatform.CollactNewBall(other.gameObject);
-            SoundManager.Instance.PlayPopSound();
+            AudioManager.Instance.PlayPopSound();
         }
     }
 }

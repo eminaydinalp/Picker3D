@@ -19,14 +19,14 @@ namespace Gameplay
 
         private void OnEnable()
         {
-            PickerPhysicsCallbacks.hittedLevelEndEvent += ChangeToSmartUpdate;
-            PickerPhysicsCallbacks.hittedLevelEndEvent += ChangeTunnelCam;
+            EventManager.OnHittedLevelEnd += ChangeToSmartUpdate;
+            EventManager.OnHittedLevelEnd += ChangeTunnelCam;
         }
         
         private void OnDisable()
         {
-            PickerPhysicsCallbacks.hittedLevelEndEvent += ChangeToSmartUpdate;
-            PickerPhysicsCallbacks.hittedLevelEndEvent -= ChangeTunnelCam;
+            EventManager.OnHittedLevelEnd += ChangeToSmartUpdate;
+            EventManager.OnHittedLevelEnd -= ChangeTunnelCam;
         }
 
         private void ChangeToSmartUpdate()

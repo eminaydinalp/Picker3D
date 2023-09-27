@@ -14,8 +14,6 @@ public class PickerMovement : MonoBehaviour
     private float horizontal;
     private Vector3 mousePosition;
 
-    public static event Action movedToNextStartEvent;
-    
     private LeanFinger myFinger;
 
     private void Awake()
@@ -86,23 +84,23 @@ public class PickerMovement : MonoBehaviour
         Vector3 targetPos = new Vector3(0, transform.position.y, curLevellength-10f);
         transform.DOMove(targetPos, 2f).OnComplete(() =>
         {
-            movedToNextStartEvent?.Invoke();
+            EventManager.InvokeOnMovedToNextStart();
         });
     }
     private void OnEnable()
     {
-        GameManager.gameStartedEvent += EnableMovement;
-        GameManager.gameFinishedEvent += DisableMovement;
-        PickerPhysicsCallbacks.hittedBallCollecterEvent += DisableVerticalMovement;
-        PickerPhysicsCallbacks.hittedLevelEndEvent += MoveToNextLevelStartPos;
-        BallCollecterPlatform.collecterSuccessEvent += EnableVerticalMovement;
+        EventManager.OnGameStarted += EnableMovement;
+        EventManager.OnGameFinished += DisableMovement;
+        EventManager.OnHittedBallCollector += DisableVerticalMovement;
+        EventManager.OnHittedLevelEnd += MoveToNextLevelStartPos;
+        EventManager.OnCollectorSuccess += EnableVerticalMovement;
     }
     private void OnDisable()
     {
-        GameManager.gameStartedEvent -= EnableMovement;
-        GameManager.gameFinishedEvent -= DisableMovement;
-        PickerPhysicsCallbacks.hittedBallCollecterEvent -= DisableVerticalMovement;
-        PickerPhysicsCallbacks.hittedLevelEndEvent -= MoveToNextLevelStartPos;
-        BallCollecterPlatform.collecterSuccessEvent -= EnableVerticalMovement;
+        EventManager.OnGameStarted -= EnableMovement;
+        EventManager.OnGameFinished -= DisableMovement;
+        EventManager.OnHittedBallCollector -= DisableVerticalMovement;
+        EventManager.OnHittedLevelEnd -= MoveToNextLevelStartPos;
+        EventManager.OnCollectorSuccess -= EnableVerticalMovement;
     }
 }

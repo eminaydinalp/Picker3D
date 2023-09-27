@@ -30,11 +30,11 @@ namespace Gameplay
 
         private void OnEnable()
         {
-            GameManager.gameStartedEvent += EnableInput;
+            EventManager.OnGameStarted += EnableInput;
         }
         private void OnDisable()
         {
-            GameManager.gameStartedEvent -= EnableInput;
+            EventManager.OnGameStarted -= EnableInput;
         }
 
         private void EnableInput()

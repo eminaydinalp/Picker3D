@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -21,7 +22,7 @@ public class Ball : MonoBehaviour
         ParticleSystemRenderer psr = spawnedEffectObj.GetComponent<ParticleSystemRenderer>();
         psr.material = platformMat;
         spawnedEffectObj.GetComponent<ParticleSystem>().Play();
-        SoundManager.Instance.PlayPopSound();
+        AudioManager.Instance.PlayPopSound();
         Destroy(gameObject);
         Destroy(spawnedEffectObj,3f);
     }
@@ -40,13 +41,21 @@ public class Ball : MonoBehaviour
         myRb.angularVelocity = Vector3.zero;
         myRb.AddForce(forceDirection * force);
     }
-   
+    
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.transform.CompareTag("Road"))
+        {
+            myRb.constraints = RigidbodyConstraints.None;
+        }
+    }
+
     private void OnEnable()
     {
-        PickerPhysicsCallbacks.hittedBallCollecterEvent += CheckIsInside;
+        EventManager.OnHittedBallCollector += CheckIsInside;
     }
     private void OnDisable()
     {
-        PickerPhysicsCallbacks.hittedBallCollecterEvent -= CheckIsInside;
+        EventManager.OnHittedBallCollector += CheckIsInside;
     }
 }

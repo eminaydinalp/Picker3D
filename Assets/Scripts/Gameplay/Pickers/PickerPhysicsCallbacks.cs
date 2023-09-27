@@ -3,8 +3,7 @@ using System;
 
 public class PickerPhysicsCallbacks : MonoBehaviour
 {
-    public static event Action hittedBallCollecterEvent;
-    public static event Action hittedLevelEndEvent;
+    
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("BallCollecter"))
@@ -13,16 +12,16 @@ public class PickerPhysicsCallbacks : MonoBehaviour
             BallCollecterPlatform ballCollecterPlatform = other.gameObject.GetComponentInParent<BallCollecterPlatform>();
             ballCollecterPlatform.CheckCollecterStatus();
             other.gameObject.SetActive(false);
-            hittedBallCollecterEvent?.Invoke();
+            EventManager.InvokeOnHittedBallCollector();
         }
         if (other.gameObject.CompareTag("LevelEnd"))
         {
             other.gameObject.tag = "Untagged";
-            hittedLevelEndEvent?.Invoke();
+            EventManager.InvokeOnHittedLevelEnd();
         }
         if (other.gameObject.CompareTag("Ball"))
         {
-            SoundManager.Instance.PlayPopSound();
+            AudioManager.Instance.PlayPopSound();
             other.gameObject.GetComponent<Ball>().SetStatus(true);
         }
     }

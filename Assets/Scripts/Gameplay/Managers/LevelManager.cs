@@ -7,8 +7,6 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private GameObject[] levelPrefabs;
     private int currentLevelIndex;
     private int nextLevelIndex;
-
-    public static event Action levelLoadedEvent;
     public static LevelManager Instance { get; private set; }
     private void Awake()
     {
@@ -85,7 +83,7 @@ public class LevelManager : MonoBehaviour
         GameObject nextLevel = Instantiate(levelPrefabs[nextLevelIndex], nextLevelSpawnPos,
             Quaternion.identity, transform);
 
-        levelLoadedEvent?.Invoke();
+        EventManager.InvokeOnLevelLoaded();
     }
     public float GetCurrentLevelLength(GameObject curLevelObj)
     {
@@ -112,12 +110,12 @@ public class LevelManager : MonoBehaviour
     }
     private void OnEnable()
     {
-        GameManager.gameSuccessedEvent += ResetNextLevelIndex;
-        GameManager.gameSuccessedEvent += IncreaseLevel;
+        EventManager.OnGameSuccessed += ResetNextLevelIndex;
+        EventManager.OnGameSuccessed += IncreaseLevel;
     }
     private void OnDisable()
     {
-        GameManager.gameSuccessedEvent -= ResetNextLevelIndex;
-        GameManager.gameSuccessedEvent -= IncreaseLevel;
+        EventManager.OnGameSuccessed -= ResetNextLevelIndex;
+        EventManager.OnGameSuccessed -= IncreaseLevel;
     }
 }

@@ -122,10 +122,10 @@ public class LevelInfoManager : MonoBehaviour
     }
     private void OnEnable()
     {
-        LevelManager.levelLoadedEvent += SetColorsOfStartEnd;
+        EventManager.OnLevelLoaded += SetColorsOfStartEnd;
     }
     private void OnDisable()
     {
-        LevelManager.levelLoadedEvent -= SetColorsOfStartEnd;
+        EventManager.OnLevelLoaded -= SetColorsOfStartEnd;
     }
 }

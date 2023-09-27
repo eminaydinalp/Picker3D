@@ -9,11 +9,11 @@ public class WingController : MonoBehaviour
     [SerializeField] private GameObject leftWing;
     private void OnEnable()
     {
-        PickerPhysicsCallbacks.hittedBallCollecterEvent += DisableWings;
+        EventManager.OnHittedBallCollector += DisableWings;
     }
     private void OnDisable()
     {
-        PickerPhysicsCallbacks.hittedBallCollecterEvent -= DisableWings;
+        EventManager.OnHittedBallCollector -= DisableWings;
     }
 
     private void OnTriggerEnter(Collider other)

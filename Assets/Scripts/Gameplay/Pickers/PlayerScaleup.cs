@@ -9,13 +9,13 @@ public class PlayerScaleup : MonoBehaviour
     
     private void OnEnable()
     {
-        BallCollecterPlatform.collecterSuccessEvent += ScaleUpPlayer;
-        BallCollecterPlatform.collecterSuccessEvent += ShowUpText;
+        EventManager.OnCollectorSuccess += ScaleUpPlayer;
+        EventManager.OnCollectorSuccess += ShowUpText;
     }
     private void OnDisable()
     {
-        BallCollecterPlatform.collecterSuccessEvent -= ScaleUpPlayer;
-        BallCollecterPlatform.collecterSuccessEvent -= ShowUpText;
+        EventManager.OnCollectorSuccess -= ScaleUpPlayer;
+        EventManager.OnCollectorSuccess -= ShowUpText;
     }
 
     private void ScaleUpPlayer()

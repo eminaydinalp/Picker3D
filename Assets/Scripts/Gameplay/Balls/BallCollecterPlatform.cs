@@ -13,8 +13,7 @@ public class BallCollecterPlatform : MonoBehaviour
     private List<GameObject> collectedBalls = new List<GameObject>();
     private int collectedCount = 0;
     private int collectLimit = 0;
-    public static event Action collecterSuccessEvent;
-    public static event Action collecterFailedEvent;
+    
     [SerializeField] private Material platformMat;
     public void CollactNewBall(GameObject ballObj)
     {
@@ -61,12 +60,14 @@ public class BallCollecterPlatform : MonoBehaviour
             yield return new WaitForSeconds(1f);
             myAnim.SetTrigger("Close");
             yield return new WaitForSeconds(2f);
-            collecterSuccessEvent?.Invoke();
+            EventManager.InvokeOnCollectorSuccess();
+            AudioManager.Instance.PlaySfx(SoundType.Success);
         }
         else
         {
             //fail
-            collecterFailedEvent?.Invoke();
+            EventManager.InvokeOnCollectorFailed();
+            AudioManager.Instance.PlaySfx(SoundType.Fail);
         }
     }
 

@@ -5,33 +5,28 @@ using System;
 
 public class GameManager : MonoBehaviour
 {
-    public static event Action gameStartedEvent;
-    public static event Action gameFinishedEvent;
-    public static event Action gameSuccessedEvent;
-    public static event Action gameFailedEvent;
-
     public void StartGame()
     {
-        gameStartedEvent?.Invoke();
+        EventManager.InvokeGameStarted();
     }
     public void GameSuccessed()
     {
-        gameSuccessedEvent?.Invoke();
-        gameFinishedEvent?.Invoke();  
+        EventManager.InvokeOnGameSuccessed();
+        EventManager.InvokeOnGameFinished();
     }
     public void GameFailed()
     {
-        gameFailedEvent?.Invoke();
-        gameFinishedEvent?.Invoke();
+        EventManager.InvokeOnGameFailed();
+        EventManager.InvokeOnGameFinished();
     }
     private void OnEnable()
     {
-        BallCollecterPlatform.collecterFailedEvent += GameFailed;
-        PickerMovement.movedToNextStartEvent += GameSuccessed;
+        EventManager.OnCollectorFailed += GameFailed;
+        EventManager.OnMovedToNextStart += GameSuccessed;
     }
     private void OnDisable()
     {
-        BallCollecterPlatform.collecterFailedEvent -= GameFailed;
-        PickerMovement.movedToNextStartEvent -= GameSuccessed;
+        EventManager.OnCollectorFailed += GameFailed;
+        EventManager.OnMovedToNextStart -= GameSuccessed;
     }
 }
